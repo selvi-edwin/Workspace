@@ -1,0 +1,44 @@
+ <div> 
+        <h3>All registered users:</h3>
+        <table ng-cloak class= "table table striped">
+            <tr>
+                <th> Name </th>
+                <th> Username </th>
+                <th> email </th>
+            </tr>
+            <tr ng-repeat= "person in allRegUsers.data">
+                    <td> {{ person.name}}</td>
+                    <td> {{ person.username}}</td>
+                    <td> {{ person.email}}</td>
+            </tr>
+        </table>
+  <!--
+<ul>
+    <li ng-repeat="person in allRegUsers.data">
+      {{person.data.name}} {{person.data.username}}  {{person.data.email}}
+        {{person.name}} ({{person.username}} {{person.email}})
+    </li>
+</ul>
+
+
+    <div> 
+        <table ng-cloak class= "table table striped">
+            <tr>
+                <th ng-click="doSort('Name')"> Name </th>
+                <th> Address </th>
+                <th> City </th>
+                <th> Contact </th>
+                <th> DOB </th>
+                <th> W.A.Date</th>           
+            </tr>
+
+            <tr ng-repeat= "person in members | filter: searchName | orderBy:sortBy:reverse">
+                <td> {{ person.Name}}</td>
+                <td> {{ person.Address}}</td>
+                <td> {{ person.City}}</td>
+                <td> {{ person.Contact}}</td>
+                <td> {{ person.DOB}}</td>
+                <td> {{ person.AnniDate}}</td>
+            </tr>
+        </table>
+    </div> -->
